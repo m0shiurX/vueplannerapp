@@ -15,16 +15,26 @@
     <section class="container relative">
       <div class="absolute top-[-150px] w-full">
         <div class="flex items-center relative">
-          <input class="absolute left-4 h-full" type="checkbox" />
           <input
-            class="w-full py-5 px-10 text-white placeholder:text-gray-400 bg-light-grayish-blue rounded-md focus:outline-none border-2 border-solid border-transparent"
+            class="absolute left-4 bg-white appearance-none w-6 h-6 rounded-full"
+            type="checkbox"
+          />
+          <input
+            class="w-full py-5 px-10 ml-2 text-white placeholder:text-gray-400 bg-light-grayish-blue rounded-md focus:outline-none border-2 border-solid border-transparent"
             type="text"
             placeholder="Add Todo"
           />
         </div>
       </div>
     </section>
+
+    <!-- Todos -->
+    <section>
+      <TodoContainer />
+    </section>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import TodoContainer from './TodoContainer.vue';
+</script>
