@@ -16,6 +16,9 @@ module.exports = {
           '2xl': '540px',
         },
       },
+      fontFamily: {
+        josefin: ['Josefin Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
